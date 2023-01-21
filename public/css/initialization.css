@@ -1,0 +1,132 @@
+
+
+/* ||Initialization */
+* {
+    margin: 0;
+    /* border: 0.5px solid red;  */
+  }
+  *::before,
+  *::after {
+    content: '';
+    margin: 0;
+    padding: 0;
+    line-height: 2.5rem;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none;
+    cursor: url("../assets/img/cursor.png"),auto;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-black);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-light);
+    border-radius: 0.5rem;
+  }
+  .gradient-text {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    /* Fallback color. */
+    background-color: var(--color-five);
+    /* the gradient. */
+    background-image: linear-gradient(
+      45deg,
+      var(--color-four),
+      var(--color-one),
+      var(--color-two),
+      var(--color-five)
+    );
+  
+    /* background size and repeat properties. */
+    background-size: 200%;
+    background-repeat: no-repeat;
+  
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: anim 12s infinite alternate;
+  }
+  @keyframes anim {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+  .first-section,
+  .about,
+  .time,
+  .events,
+  .speaker,
+  .timeline {
+    position: relative;
+  }
+  
+  .bgText {
+    user-select: none;
+    font-family: "Hanson", sans-serif;
+    color: #213d4e24;
+    -webkit-text-stroke: 5px #213d4e24;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 12rem;
+  }
+  /* @media screen and (max-width: 1000px){
+    .bg-text{
+      
+    }
+  } */
+  .content-wrap::before,
+  .content-wrap::after,
+  .nav-main::before,
+  .nav-main::after,
+  .speaker-content .auto-grid::before,
+  .speaker-content .auto-grid::after,
+  .accordion>label::before,
+  .accordion>label::after,
+  .card::before,
+  .card::after,
+  nav::before,
+  nav::after,
+  .eventList::before,
+  .eventList::after,
+  .container_infos::before,
+  .container_infos::after {
+    display: none;
+  }
+  @media only screen and (max-width: 720px) {
+    .bgText {
+      -webkit-text-stroke: 2px;
+      font-size: 2rem;
+      right: 0;
+    }
+  }
+  .font-big{
+    font-size: 1.5em;
+  }
+  /* ||End Initialization|| */
+  

@@ -1,0 +1,120 @@
+
+/* sponsors */
+.spons{
+    cursor: url("../assets/img/cursor-white.png"),auto;
+  }
+  @media screen and (max-width: 750px){
+    .spons-box  {
+      flex: 0 1 100px;
+    }
+    .spons-responsive{
+      width: 100%;
+      height: auto;
+      flex: center; 
+    }
+  }
+  .spons{
+    display: flex;
+    flex-direction: column;
+  }
+  .spons-text h1 {
+    font-weight: 900;
+    font-size: 2.7rem;
+  }
+  .spons-text
+  {
+    align-items: flex-start;
+    margin: 5px auto;
+    width: 75%;
+  } 
+  .spons-text h1
+  {
+    text-align: center;
+    margin: 5px auto;
+    padding: auto;
+  }
+  .spons section
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #fff ;
+  }
+  
+  .spons-container
+  {
+      height: 100%;
+      padding: 15px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    width: 90vw;
+    max-width: 1100px;
+      flex-wrap: wrap;
+      align-content: center;
+      gap: 5px;
+  }
+  .spons-box
+  {
+      
+    margin: 15px;
+      position: relative;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1.5px solid #fff;
+      color: #111;
+    transition: filter 0.3s ease-in 0.5s;
+  }
+  .spons-box img{
+    position: relative;
+    top: 7px;
+  }
+  .spons-box:before
+  {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 12px);
+      background: #1c1c1c;
+      transition: 0.3s ease-in-out;
+      transform: scaleY(1);
+      transition-delay: 0.5s;
+  }
+  
+  .spons-box:hover:before
+  {
+      transform: scaleY(0);
+  }
+  
+  .spons-box:after
+  {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% - 12px);
+      background: #1c1c1c;
+      transition: 0.5s ease-in-out;
+      transform: scaleX(1);
+  }
+  
+  .spons-box:hover:after
+  {
+      transform: scaleX(0);
+  }
+  
+  .spons-box span
+  {
+      position: relative;
+      z-index: 3;
+    cursor: url("../assets/img/hand-cursor.png"),pointer;
+  } 
+  /* ||End Sponsors CSS|| */
+    
+  

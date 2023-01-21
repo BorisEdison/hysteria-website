@@ -1,0 +1,144 @@
+/* ||Events card CSS|| */
+.events {
+    padding: 4rem 0;
+    background: linear-gradient(#f0f0f0, #f6e8c0, #f0f0f0);
+    /* background-color: rgba(246, 4, 124, 0.09);
+    color: var(--black-bg); */
+
+    position: relative;
+
+}
+
+@media screen and (max-width: 350px) {
+    .events {
+        padding: 0;
+    }
+}
+
+.events>.content-wrap {
+    flex-direction: column;
+}
+
+.events>.content-wrap>.bg-text {
+    position: absolute;
+    opacity: .3;
+    line-height: 150px;
+    right: 0;
+    writing-mode: vertical-rl;
+    -webkit-text-stroke-color: #ff4070;
+}
+
+.events header {
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.center-expand-underline {
+    padding: 1em 0 2em 0;
+    position: relative;
+}
+
+.center-expand-underline::after {
+    position: absolute;
+    content: "";
+
+    left: 0;
+    bottom: 0.99em;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-two);
+
+    transform: scaleX(0.2);
+    transform-origin: center;
+    transition: transform 500ms ease-in-out;
+}
+
+.center-expand-underline:hover::after,
+.center-expand-underline:active::after {
+    transform: scaleX(0.8);
+}
+
+.center-expand-underline::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 1em;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(209, 207, 207);
+    transform: scaleX(0.8);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 6em;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+@media (min-width: 800px) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1900px) {
+    .card {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 2200px) {
+    .card {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.events>.bgText {
+    font-size: 8rem;
+    left: calc(100vw - 5.5rem);
+    transform-origin: center left;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1100px) {
+    .card {
+        flex-direction: column;
+        gap: 5em;
+        align-items: center;
+    }
+
+    .events>.content-wrap>.bg-text {
+        top: 33%;
+    }
+
+    .events .content-wrap {
+        min-height: 1000px;
+    }
+
+    .post {
+        width: 80%;
+    }
+}
+
+.events .btn {
+    width: 120px;
+}
+
+.events .btn-three::before {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.container_infos>.postedBy {
+    text-align: center;
+}

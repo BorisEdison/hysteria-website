@@ -1,0 +1,163 @@
+/* ||First section CSS|| */
+.first-section>.content-wrap {
+    background: var(--transparent-overlay), url("../assets/img/hero2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .content-wrap {
+    padding: 0 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .cal-loc{
+    display: flex;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .cal-loc>.cal{
+    font-size: 16px;
+    padding-left: 0.25rem;
+    letter-spacing: 1px;
+  }
+  .cal-loc>img , .cal-loc>.loc>img{
+    width: 16px;
+    height: 20px;
+  }
+  .cal-loc>.loc{
+    margin-left: 3rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .content-container>.box-3>.btn-three{
+    width: 150px;
+  }
+  .line {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    right: 0;
+    background-color: #ffffff29;
+    z-index: 50;
+  }
+  .line.first {
+    top: 32vh;
+  }
+  .line.second {
+    top: 70vh;
+    right: auto;
+    left: 0;
+  }
+  .line span {
+    /* background-image: linear-gradient(92deg, #f87c57, #f2296f); */
+    background: linear-gradient(45deg, var(--color-two), var(--color-five));
+    width: 60px;
+    height: 3px;
+    top: -1px;
+    position: absolute;
+  }
+  .line.first span {
+    animation: line-banner alternate 13s ease-in-out infinite;
+    right: 25%;
+  }
+  .line.second span:first-of-type {
+    animation: line-banner2 alternate 17s ease-in-out infinite;
+    left: 20%;
+    width: 100px;
+  }
+  .line.second span:last-of-type {
+    animation: line-banner3 alternate 17s ease-in-out infinite;
+    left: 45%;
+    width: 30px;
+  }
+  @keyframes line-banner {
+    100% {
+      right: 40%;
+    }
+  }
+  @keyframes line-banner2 {
+    100% {
+      left: 35%;
+    }
+  }
+  @keyframes line-banner3 {
+    100% {
+      left: 60%;
+    }
+  }
+  .first-section h1 {
+    /* background: -webkit-linear-gradient(0.5turn, #e08a27, #b42dcf); */
+    background-clip: var(--horizontal-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 150px;
+    cursor: url("../assets/img/hand-cursor.png"),pointer;
+  }
+  .btn-three {
+    color: var(--color-white);
+    transition: all 0.5s;
+    position: relative;
+    cursor: url("../assets/img/hand-cursor.png"),pointer;
+  }
+  .btn-three::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.2, 1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  .btn-three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  .read-more{
+    text-decoration: none;
+  }
+  @media screen and (max-width:768px){
+    .first-section h1{
+      font-size: 35px;
+    }
+    .cal-loc>.cal, .cal-loc>.loc{
+      font-size: 14px;
+    }
+  }
+  @media only screen and(max-width:768px) {
+    .first-section .content-wrap {
+      padding: 0 1em;
+    } 
+    .btn-three::before {
+      transform: scale(1, 1);
+    }
+  }
+  /* ||End First section CSS|| */
+  

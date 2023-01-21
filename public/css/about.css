@@ -1,0 +1,167 @@
+/* ||About section CSS|| */
+.about {
+    cursor: url("../assets/img/cursor-white.png"), auto;
+}
+
+.about>.content-wrap {
+    position: relative;
+    gap: 10em;
+    /* background: linear-gradient( #f0f0f0, #f6e8c0, #f0f0f0); */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.bg-text {
+    position: absolute;
+    font-weight: 700;
+    font-size: 200px;
+    font-family: "Poppins", sans-serif;
+    opacity: .4;
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b6b6b6;
+}
+
+.about-content>.bg-text {
+    top: -7rem;
+    left: -1.75rem;
+}
+
+.about-content>.subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b6b6b6;
+}
+
+.about-content>.title {
+    font-size: 50px;
+    position: relative;
+}
+
+.left-to-right-underline {
+    padding: 1.25rem 0 5rem 0;
+
+    position: relative;
+}
+
+.left-to-right-underline::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 1em;
+    width: 30%;
+    height: 2px;
+    background-color: var(--color-two);
+
+    transform: scaleX(0.2);
+    transform-origin: left;
+    transition: transform-origin 500ms ease-in-out;
+}
+
+.left-to-right-underline:hover::after,
+.left-to-right-underline:active::after {
+    transform-origin: right;
+}
+
+.left-to-right-underline::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 1em;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(209, 207, 207);
+}
+
+.img-1 {
+    position: relative;
+    top: 150px;
+    left: px;
+    border: 1px solid var(--color-black);
+    z-index: 1;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+.img-2 {
+    position: relative;
+    top: -100px;
+    left: -100px;
+    border: 1px solid var(--color-black);
+    z-index: 2;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+.about>.bgText {
+    overflow: hidden;
+    -webkit-text-stroke-color: #ffffff13;
+    top: 10%;
+    left: 10%;
+}
+
+.time {
+    position: relative;
+}
+
+.time .left-to-right-underline {}
+
+@media screen and (max-width: 1100px) {
+    .about>.content-wrap {
+
+        flex-direction: column;
+    }
+
+    .about-content {
+        padding-top: 5em;
+    }
+
+    .about-content>.bg-text {
+        top: -1.75rem;
+    }
+
+    .left-to-right-underline {
+        padding: 1.5rem 0 5rem 0;
+    }
+
+    .about-img {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-1 {
+        top: -5em;
+    }
+
+    .img-2 {
+        display: none;
+    }
+
+    .about>.bgText {
+        font-size: 7rem;
+        top: 25%;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .img-1 {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-content>.title {
+        font-size: 45px;
+    }
+
+    .left-to-right-underline {
+        padding: 1.75rem 0 5rem 0;
+    }
+}
+
+/* ||End About section CSS|| */

@@ -1,0 +1,42 @@
+:root {
+    --horizontal-gradient: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    --transition: 0.3s ease;
+    --nav-margin: 80px;
+    --transparent-overlay: linear-gradient(rgba(28, 16, 43, 0.877),
+            rgba(46, 27, 68, 0.678)
+            /* rgba(124, 89, 163, 0.45), 
+        rgba(124, 89, 163, 0.45) */
+        );
+    --header-gradient: linear-gradient(rgba(126, 33, 138, 0.877),
+            rgba(136, 114, 15, 0.678));
+    --scroll-bar-light: rgba(229, 160, 231, 0.733);
+    --nav-bar-light: hsla(0, 0%, 100%, 0.651);
+    --transparent-one: rgba(221, 193, 151, 0.096);
+    --color-one: #493ade;
+    --color-two: #f8047c;
+    --color-three: #1d3ec3;
+    --color-four: #091e8b;
+    --color-five: #8c24d4;
+    --color-white: #f0f0f0;
+    --color-black: #080101;
+}
+
+@font-face {
+    font-family: "Hanson";
+    src: url("../assets/fonts/Hanson-Bold.ttf");
+    font-weight: bold;
+}
+
+/*@font-face {
+    font-family: "Baskerville";
+    src: url("../assets/fonts/Baskerville-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Crete";
+    src: url("../assets/fonts/CreteRound-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Mont";
+    src: url("../assets/fonts/Mont-HeavyDEMO.otf");
+  }
+   */
