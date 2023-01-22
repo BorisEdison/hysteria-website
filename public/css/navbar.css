@@ -222,7 +222,7 @@ nav {
 .nav-img {
     box-shadow: var(--color-white);
     width: 73px;
-    height: 60px;
+    height: 80px;
     transition: 250ms ease-out;
 }
 
