@@ -9,11 +9,7 @@
 
 }
 
-@media screen and (max-width: 350px) {
-    .events {
-        padding: 0;
-    }
-}
+
 
 .events>.content-wrap {
     flex-direction: column;
@@ -83,7 +79,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media screen and (max-width: 350px) {
+    .events {
+        padding: 0;
+    }
+}
 @media (min-width: 1300px) {
     .card {
         grid-template-columns: repeat(3, 1fr);
