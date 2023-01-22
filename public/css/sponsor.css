@@ -1,18 +1,7 @@
-
-/* sponsors */
 .spons{
     cursor: url("../assets/img/cursor-white.png"),auto;
   }
-  @media screen and (max-width: 750px){
-    .spons-box  {
-      flex: 0 1 100px;
-    }
-    .spons-responsive{
-      width: 100%;
-      height: auto;
-      flex: center; 
-    }
-  }
+
   .spons{
     display: flex;
     flex-direction: column;
@@ -115,6 +104,13 @@
       z-index: 3;
     cursor: url("../assets/img/hand-cursor.png"),pointer;
   } 
-  /* ||End Sponsors CSS|| */
-    
-  
+  @media screen and (max-width: 750px){
+    .spons-box  {
+      flex: 0 1 100px;
+    }
+    .spons-responsive{
+      width: 100%;
+      height: auto;
+      flex: center; 
+    }
+  }
