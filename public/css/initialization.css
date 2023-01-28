@@ -82,10 +82,7 @@
   }
   .first-section,
   .about,
-  .time,
-  .events,
-  .speaker,
-  .timeline {
+  .events{
     position: relative;
   }
   
