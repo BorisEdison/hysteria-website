@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     /* border: 0.5px solid red;  */
@@ -103,8 +104,6 @@
   .accordion>label::after,
   .card::before,
   .card::after,
-  nav::before,
-  nav::after,
   .eventList::before,
   .eventList::after,
   .container_infos::before,

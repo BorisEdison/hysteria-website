@@ -3,6 +3,11 @@
     height: 250px;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 1s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.04);
 }
 
 @media screen and (max-width: 1400px) {

@@ -1,90 +1,41 @@
-//const navBar = document.querySelector
-var myNav = document.getElementById("mynav");
-var navTexts = document.getElementsByClassName("nav-text");
-const hamburger = document.querySelector(".hamburger");
-const hamburgers = document.querySelectorAll(".hamburger>span");
-let whiteLayer = document.querySelector(".white-layer");
-let blackLayer = document.querySelector(".black-layer");
-const navlinks = document.querySelector(".nav-links");
-var vh = window.innerHeight / 8;
-const navLink = document.querySelectorAll(".nav-links>a");
+// navbar
+var hamburger = document.querySelector(".hamburger");
+var navbar = document.querySelector('.navbar')
+var navLinks = document.querySelectorAll('.nav-link')
 
-// hamburger.addEventListener("click", mobileMenu);
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navlinks.classList.toggle("active");
-}
-
-navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-  navlinks.classList.remove("active");
-  setTimeout(() => {
-    blackLayer.style.left = "-100vw";
-  }, 300);
-  setTimeout(() => {
-    whiteLayer.style.left = "-100vw";
-  }, 600);
-  hamburger.classList.remove("active");
-}
-hamburger.addEventListener("click", () => {
-  if (hamburger.classList.contains("active")) {
-    navlinks.classList.remove("active");
-    setTimeout(() => {
-      blackLayer.style.left = "-100vw";
-    }, 300);
-    setTimeout(() => {
-      whiteLayer.style.left = "-100vw";
-    }, 600);
-    hamburger.classList.remove("active");
-  } else {
-    setTimeout(() => {
-      blackLayer.style.left = "0";
-    }, 300);
-    setTimeout(() => {
-      whiteLayer.style.left = "0";
-    }, 100);
-    setTimeout(() => {
-      navlinks.classList.add("active");
-    }, 600);
-    hamburger.classList.add("active");
-  }
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+  navbar.classList.toggle("shadow-lg")
 });
-window.onscroll = function () {
-  console.log(document.documentElement.scrollTop,vh)
-  "use strict";
-  if (document.documentElement.scrollTop<= vh) {
-    myNav.classList.add("nav-transparent");
-    myNav.classList.remove("nav-colored");
-    document.getElementById("logo").src = "/content/logo.png";
-    for (var i = 0; i < 5; i++) {
-      navTexts[i].classList.remove("nav-txt-black");
-      navTexts[i].classList.add("nav-txt-white");
-    }
-    hamburgers.forEach((hamburger) => {
-      hamburger.style.backgroundColor = "var(--color-white)";
-    });
-  }else{
-  myNav.classList.add("nav-colored");
-  myNav.classList.remove("nav-transparent");
-  document.getElementById("logo").src = "/content/logo.png";
-  for (var i = 0; i < 5; i++) {
-    navTexts[i].classList.remove("nav-txt-white");
-    navTexts[i].classList.add("nav-txt-black");
-  }
-  hamburgers.forEach((hamburger) => {
-    hamburger.style.backgroundColor = "var(--color-black)";
-  });
-}};
 
-
-
-var scrollToTopBtn = document.getElementById("scrollToTopBtn")
-var rootElement = document.documentElement
-scrollToTopBtn.addEventListener("click", scrollToTop)
-function scrollToTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
+// close nav-links on click
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", function () {
+    hamburger.classList.toggle("is-active");
+    $('.navbar-collapse').removeClass('show')
   })
-}
+})
+
+$(document).ready(function () {
+  var scrollTop = 0;
+  $(window).scroll(function () {
+    scrollTop = $(window).scrollTop();
+    $('.counter').html(scrollTop);
+    if (scrollTop >= 50) {
+      $('.navbar').addClass('shadow-lg');
+      $('.navbar').addClass('navbar-scrolled');
+      $('.navbar').removeClass('navbar-unscrolled');
+      $('.navbar').style('navbar-unscrolled');
+      // $('.navbar').addClass('bg-dark');
+
+    } else if (scrollTop < 50) {
+      $('.navbar').addClass('navbar-unscrolled');
+      $('.navbar').removeClass('shadow-lg');
+      $('.navbar').removeClass('navbar-scrolled');
+      // $('.navba').removeClass('bg-dark');
+
+    }
+
+  });
+
+});
