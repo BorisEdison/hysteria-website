@@ -9,6 +9,10 @@
 	background-color: #E30A8D !important;
 }
 
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(227, 10, 141,.175) !important;
+}
+
 .logo {
 	max-width: 70px;
 }
