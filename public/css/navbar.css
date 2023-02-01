@@ -44,7 +44,6 @@ nav {
     column-gap: 10px;
     align-items: center;
     text-decoration: none;
-    cursor: url("../assets/img/hand-cursor.png"), pointer;
 }
 
 .nav-links>a {
@@ -52,13 +51,11 @@ nav {
     text-transform: uppercase;
     position: relative;
     transition: ease-in-out 250ms;
-    cursor: url("../assets/img/hand-cursor.png"), pointer;
 }
 
 .nav-text {
     text-decoration: none;
     padding: 0 2rem;
-    cursor: url("../assets/img/hand-cursor.png"), pointer;
 }
 
 .glow:hover {
@@ -350,7 +347,6 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        cursor: url("../assets/img/hand-cursor.png"), pointer;
     }
 
     .black-layer {

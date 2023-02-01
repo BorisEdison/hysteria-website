@@ -1,12 +1,6 @@
-/* ||About section CSS|| */
-.about {
-    cursor: url("../assets/img/cursor-white.png"), auto;
-}
-
 .about>.content-wrap {
     position: relative;
     gap: 10em;
-    /* background: linear-gradient( #f0f0f0, #f6e8c0, #f0f0f0); */
 }
 
 .about-content {
@@ -163,5 +157,3 @@
         padding: 1.75rem 0 5rem 0;
     }
 }
-
-/* ||End About section CSS|| */

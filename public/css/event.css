@@ -1,9 +1,6 @@
 .events {
     padding: 4rem 0;
     background: linear-gradient(#f0f0f0, #f6e8c0, #f0f0f0);
-    /* background-color: rgba(246, 4, 124, 0.09);
-    color: var(--black-bg); */
-
     position: relative;
 
 }
@@ -75,6 +72,14 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+.events>.bgText {
+    font-size: 8rem;
+    left: calc(100vw - 5.5rem);
+    transform-origin: center left;
+    top: 0;
+    transform: rotate(90deg);
+}
+
 @media screen and (max-width: 350px) {
     .events {
         padding: 0;
@@ -97,14 +102,6 @@
     .card {
         grid-template-columns: repeat(5, 1fr);
     }
-}
-
-.events>.bgText {
-    font-size: 8rem;
-    left: calc(100vw - 5.5rem);
-    transform-origin: center left;
-    top: 0;
-    transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1100px) {

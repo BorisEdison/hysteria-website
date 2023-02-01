@@ -20,9 +20,3 @@
     --color-white: #f0f0f0;
     --color-black: #080101;
 }
-
-@font-face {
-    font-family: "Hanson";
-    src: url("../assets/fonts/Hanson-Bold.ttf");
-    font-weight: bold;
-}
