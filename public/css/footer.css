@@ -1,12 +1,40 @@
-.contact-text
-{
+.contact-text {
   align-items: flex-start;
   margin: 5px auto;
   width: 75%;
-} 
-.contact-text h1
-{
+}
+
+.contact-text h1 {
   text-align: center;
   margin: 5px auto;
   padding: auto;
+}
+
+.location-text {
+  max-width: 350px; 
+  text-align: justify;
+}
+
+.g-map {
+  width: 450px;
+  height: 300px;
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-width: 1390px) {
+  .g-map {
+    width: 350px !important;
+    height: 200px !important;
+  }
+  .location-text {
+    max-width: 200px; 
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .g-map {
+    width: 300px !important;
+    height: 180px !important;
+  }
 }

@@ -1,0 +1,20 @@
+.gallery-img {
+    width: 400px;
+    height: 250px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 1400px) {
+    .gallery-img {
+        width: 300px;
+        height: 187.5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .gallery-img {
+        width: 150px;
+        height: 93.75px;
+    }
+}
