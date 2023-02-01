@@ -1,5 +1,5 @@
 .first-section>.content-wrap {
-  background: var(--transparent-overlay), url("/content/background.jpg");
+  background: var(--transparent-overlay), url("../content/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
