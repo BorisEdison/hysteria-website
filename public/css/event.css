@@ -113,5 +113,14 @@
 @media screen and (max-width: 748px) {
     .card-div {
         transform: scale(1.1);
+        margin-top: 16px;
+    }
+    .card-btn{
+        padding: 0;
+        padding: 4px;
+        font-size: 16px !important;
+    }
+    .card-body {
+        padding: 8px 8px;
     }
 }
