@@ -8,6 +8,7 @@
 
 .gallery-img:hover {
     transform: scale(1.04);
+    box-shadow: rgba(227, 10, 141, 0.25) 0 8px 15px;
 }
 
 @media screen and (max-width: 1400px) {

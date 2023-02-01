@@ -12,8 +12,21 @@
   padding: auto;
 }
 
+.social-link {
+  transition: transform 1s;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
 .location-text {
   max-width: 350px; 
+  font-family: "League Spartan", sans-serif;
+  text-align: justify;
+}
+
+.contrib-text {
   font-family: "League Spartan", sans-serif;
   text-align: justify;
 }
@@ -22,6 +35,14 @@
   width: 450px;
   height: 300px;
   box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  transition: transform 1s;
+}
+
+.g-map:hover {
+  transform: scale(1.04);
+  /* box-shadow: rgba(227, 10, 141, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(227, 10, 141, 0.56) 0px 22px 70px 4px;
+  /* box-shadow: rgba(227, 10, 141, 0.25) 0 8px 15px; */
 }
 
 @media only screen and (max-width: 1390px) {

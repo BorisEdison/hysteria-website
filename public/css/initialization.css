@@ -1,16 +1,4 @@
 
-* {
-    margin: 0;
-    /* border: 0.5px solid red;  */
-  }
-  *::before,
-  *::after {
-    content: '';
-    margin: 0;
-    padding: 0;
-    line-height: 2.5rem;
-    box-sizing: border-box;
-  }
   body {
     position: relative;
     font-family: 'Open Sans', sans-serif;

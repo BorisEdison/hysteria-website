@@ -6,7 +6,7 @@
 .hamburger-inner,
 .hamburger-inner::after,
 .hamburger-inner::before {
-	background-color: var(--clr-accent-700) !important;
+	background-color: #E30A8D !important;
 }
 
 .logo {
